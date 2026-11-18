@@ -65,6 +65,7 @@ h1, h2, h3 { font-family: var(--font-fraunces), Georgia, serif; line-height: 1.2
   *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
 }
 
+@layer components {
 .btn {
   display: inline-flex; align-items: center; justify-content: center; gap: .5rem;
   min-height: 3rem; padding: .75rem 1.4rem; border-radius: 999px;
@@ -86,3 +87,4 @@ h1, h2, h3 { font-family: var(--font-fraunces), Georgia, serif; line-height: 1.2
 .lead { color: var(--muted); max-width: 42rem; }
 .skip { position: absolute; left: -999px; top: 0; background: var(--accent); color: var(--accent-ink); padding: .75rem 1rem; z-index: 100; }
 .skip:focus { left: 1rem; top: 1rem; }
+}

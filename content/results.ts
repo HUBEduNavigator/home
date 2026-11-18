@@ -6,8 +6,6 @@ type DualList = { parent: string[]; student: string[] };
 export type CaseResult = {
   why: Dual;
   actions: { title: string; time: string; steps: DualList }[];
-  /** Đường dẫn trong web tài liệu (TODO: HUB cập nhật khi web tài liệu có trang tương ứng). */
-  docsPath: string;
   docsLabel: string;
 };
 
@@ -19,7 +17,7 @@ export const results: Record<CaseId, CaseResult> = {
       student:
         "Các câu trả lời cho thấy bạn đang so mình với bạn bè nhiều và thấy căng khi nghĩ tới việc học. Đó là phản ứng rất bình thường, và có cách làm nhẹ đi.",
     },
-    docsPath: "",
+    
     docsLabel: "Tài liệu về quản lý áp lực và đặt mục tiêu nhỏ",
     actions: [
       {
@@ -79,7 +77,7 @@ export const results: Record<CaseId, CaseResult> = {
       student:
         "Các câu trả lời cho thấy bạn vướng ở bài mới chủ yếu vì phần kiến thức bên dưới chưa chắc. Học thêm bài mới lúc này không giúp, lùi lại đúng chỗ mới giúp.",
     },
-    docsPath: "",
+    
     docsLabel: "Tài liệu ôn lại kiến thức nền theo môn và lớp",
     actions: [
       {
@@ -139,7 +137,7 @@ export const results: Record<CaseId, CaseResult> = {
       student:
         "Các câu trả lời cho thấy bạn đã bỏ nhiều thời gian nhưng cách học chưa giúp nhớ lâu. Thường vấn đề không phải số giờ học, mà là ít khi tự kiểm tra và tự giải thích lại.",
     },
-    docsPath: "",
+    
     docsLabel: "Tài liệu về phương pháp tự học và tự kiểm tra",
     actions: [
       {
@@ -199,7 +197,7 @@ export const results: Record<CaseId, CaseResult> = {
       student:
         "Các câu trả lời cho thấy bạn cần bắt đầu lại từ nền tảng nhưng chưa có ai ngồi cùng để làm việc đó. Đó không phải lỗi của bạn, vì phần lớn lớp học được thiết kế để đi tiếp chương trình.",
     },
-    docsPath: "",
+    
     docsLabel: "Tài liệu học lại từ nền tảng",
     actions: [
       {
@@ -259,7 +257,7 @@ export const results: Record<CaseId, CaseResult> = {
       student:
         "Bạn đang học lớp 5, nên điều đáng chuẩn bị nhất lúc này không phải bài lớp 6 mà là thói quen tự học và sự tự tin khi vào môi trường mới.",
     },
-    docsPath: "",
+    
     docsLabel: "Tài liệu chuẩn bị lên THCS",
     actions: [
       {
