@@ -1,6 +1,6 @@
 import { AiDemo } from "@/components/AiDemo";
 import { AppProvider } from "@/components/AppContext";
-import { BookingModal } from "@/components/BookingModal";
+import { BookingModalLazy } from "@/components/BookingModalLazy";
 import { Compare } from "@/components/Compare";
 import { Diagnostic } from "@/components/Diagnostic";
 import { Faq } from "@/components/Faq";
@@ -14,9 +14,11 @@ import { Process } from "@/components/Process";
 import { Resources } from "@/components/Resources";
 import { Situations } from "@/components/Situations";
 import { Testimonials } from "@/components/Testimonials";
+import { MotionRoot } from "@/components/motion";
 
 export default function Page() {
   return (
+    <MotionRoot>
     <AppProvider>
       <a href="#noi-dung" className="skip">Bỏ qua tới nội dung</a>
       <Header />
@@ -35,7 +37,8 @@ export default function Page() {
       </main>
       <Footer />
       <FloatingZalo />
-      <BookingModal />
+      <BookingModalLazy />
     </AppProvider>
+    </MotionRoot>
   );
 }

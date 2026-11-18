@@ -1,8 +1,9 @@
 # PROGRESS
 
-Đã xong: khung dự án + workflow, hero (la bàn và con đường), 5 tình huống, công cụ tự kiểm tra, so sánh, quy trình, demo AI, người đồng hành, tài liệu, gói, FAQ, modal đặt lịch, footer, nút Zalo nổi, README.
+Đã xong toàn bộ phần trong brief, cộng đợt nâng cấp hoạt ảnh/sửa lỗi (xem DECISIONS.md).
 
-Chưa làm / cần kiểm tra:
-- [ ] Lighthouse (chưa chạy)
-- [ ] Xác nhận deploy Pages trên GitHub (cần bật Pages: Source = GitHub Actions)
-- [ ] Rà lại toàn bộ chữ cùng HUB
+Lighthouse (điện thoại, máy chủ có gzip, đo cục bộ): hiệu năng 89–95, truy cập 100, thực tiễn 100, SEO 100.
+
+Còn lại:
+- [ ] Xác nhận GitHub Pages đã bật và deploy thành công
+- [ ] HUB điền các TODO (xem README.md)

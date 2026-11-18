@@ -5,12 +5,14 @@ import { site } from "@/content/site";
 
 const sans = Be_Vietnam_Pro({
   subsets: ["latin", "vietnamese"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["400", "600"],
   variable: "--font-be-vietnam",
   display: "swap",
 });
 const display = Fraunces({
   subsets: ["latin", "vietnamese"],
+  weight: ["600"],
+  preload: false, // tiêu đề đổi font sau cũng được; nhường băng thông cho font nội dung (LCP)
   variable: "--font-fraunces",
   display: "swap",
 });

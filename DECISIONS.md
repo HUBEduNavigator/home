@@ -44,3 +44,11 @@ Câu 0 (mọi người): chọn lớp 5 / THCS / THPT. Thang trả lời mặc �
 9. `self-manage`
    - Phụ huynh: Con có tự soạn cặp, ghi lịch bài tập và chủ động bắt đầu làm bài mà không cần nhắc từng việc không?
    - Học sinh: Bạn có tự soạn cặp, ghi lịch bài tập và chủ động bắt đầu làm bài mà không cần ai nhắc không?
+
+## Đợt nâng cấp 2
+- **Hoạt ảnh:** `LazyMotion` + `domAnimation` (chỉ nạp phần cần) và `MotionConfig reducedMotion="user"` cho toàn trang. Component dùng chung trong `components/motion.tsx`: `Reveal`, `Stagger`, `SectionHead`.
+- **Hero:** một chấm sáng đi dọc con đường, mỗi chặng sáng lên đúng lúc chấm đi qua; la bàn dò hướng rồi dừng bằng lò xo, chỉ về phía trước. Chạy khi hình vào màn hình (trên điện thoại hình nằm dưới nút bấm).
+- **Hero không làm mờ h1 lúc tải** để không làm chậm LCP; chỉ chuyển cảnh khi đổi phụ huynh/học sinh.
+- **Modal đặt lịch** chỉ tải mã khi bấm mở lần đầu (`BookingModalLazy`).
+- **Font:** Be Vietnam Pro 400/600, Fraunces 600 (không preload) để LCP nhanh hơn. Slogan bỏ chữ nghiêng.
+- **Deploy:** workflow tự thử bật Pages (`configure-pages` với `enablement`). Nếu token mặc định không đủ quyền thì vẫn cần bật tay một lần.

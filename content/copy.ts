@@ -26,9 +26,9 @@ export const diagnosticIntro = {
   title: "Tự kiểm tra trong 3 phút",
   sub: {
     parent:
-      "Chín câu hỏi về những điều ba mẹ có thể quan sát được ở con. Cuối bài ba mẹ nhận được 3 việc làm tại nhà trong tuần này, miễn phí, dù có đăng ký hay không.",
+      "Chín hoặc mười câu hỏi về những điều ba mẹ có thể quan sát được ở con. Cuối bài ba mẹ nhận được 3 việc làm tại nhà trong tuần này, miễn phí, dù có đăng ký hay không.",
     student:
-      "Chín câu hỏi về những điều bạn tự quan sát được ở mình. Cuối bài bạn nhận được 3 việc làm tại nhà trong tuần này, miễn phí, dù có đăng ký hay không.",
+      "Chín hoặc mười câu hỏi về những điều bạn tự quan sát được ở mình. Cuối bài bạn nhận được 3 việc làm tại nhà trong tuần này, miễn phí, dù có đăng ký hay không.",
   } as Dual,
   privacy: "Câu trả lời chỉ nằm trên máy bạn. Web không lưu và không gửi đi đâu.",
 };
