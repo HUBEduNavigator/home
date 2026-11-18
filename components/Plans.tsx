@@ -10,7 +10,7 @@ export function Plans() {
   return (
     <section id="goi" className="section">
       <div className="container-x">
-        <SectionHead eyebrow="Dành cho ai và gói dịch vụ" title="Ba nhóm lớp, mỗi nhóm một trọng tâm" />
+        <SectionHead eyebrow="Dành cho ai và gói dịch vụ" title="Ba nhóm cấp học, mỗi nhóm một trọng tâm" lead="Mỗi giai đoạn cần một cách tiếp cận khác nhau, nên lộ trình được điều chỉnh theo lứa tuổi và mục tiêu học tập của từng cấp." />
         <Stagger className="mt-8 grid gap-5 md:grid-cols-3" gap={0.1}>
           {plans.map((p) => (
             <StaggerItem key={p.id} className="card card-hover flex flex-col p-6">
@@ -26,7 +26,7 @@ export function Plans() {
             </StaggerItem>
           ))}
         </Stagger>
-        <Reveal><p className="mt-5 text-sm text-muted">Buổi chẩn đoán đầu tiên miễn phí. Học phí và hình thức học sẽ được trao đổi rõ ràng trước khi bắt đầu.</p></Reveal>
+        <Reveal><p className="mt-5 text-sm text-muted">Buổi chẩn đoán đầu tiên miễn phí. Lộ trình chi tiết, hình thức học và học phí sẽ được trao đổi rõ ràng với gia đình trước khi bắt đầu.</p></Reveal>
       </div>
     </section>
   );

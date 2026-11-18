@@ -52,3 +52,15 @@ Câu 0 (mọi người): chọn lớp 5 / THCS / THPT. Thang trả lời mặc �
 - **Modal đặt lịch** chỉ tải mã khi bấm mở lần đầu (`BookingModalLazy`).
 - **Font:** Be Vietnam Pro 400/600, Fraunces 600 (không preload) để LCP nhanh hơn. Slogan bỏ chữ nghiêng.
 - **Deploy:** workflow tự thử bật Pages (`configure-pages` với `enablement`). Nếu token mặc định không đủ quyền thì vẫn cần bật tay một lần.
+
+## Đợt biên tập nội dung (bản viết lại từ HUB)
+Đã áp: văn phong 5 tình huống (có lời giải riêng cho phụ huynh/học sinh), hero, bảng so sánh, quy trình, hội thoại demo AI (học sinh nêu cách tính sai 30% rồi tự sửa), FAQ, gói theo cấp học, mô tả kho tài liệu, nhãn menu.
+
+Đã **lọc ra, không áp**, vì trái brief gốc hoặc sai sự thật:
+- **"Tâm thư từ Người sáng lập"**: brief yêu cầu HUB tự viết; để nguyên khung TODO.
+- **Chi tiết hồ sơ HUB không có trong thông tin HUB cung cấp**: "Đọc hiểu & Giao tiếp độc lập", "Hệ chữ viết", "Marketing chiến lược", "Chuyên môn cố vấn nâng cao", "C1 (IELTS 8.0)" gộp lại; giữ đúng danh sách gốc. "Đội ngũ" đổi thành một người sáng lập.
+- **Thời lượng/quy trình tự bịa**: buổi chẩn đoán "30–45 phút", "15 phút đầu", "chu kỳ 4 tuần, 1–3 chu kỳ", bộ "Prompt cá nhân hóa". Thời lượng vẫn TODO.
+- **Đoạn văn bảo mật "lưu cục bộ trên thiết bị"**: sai, web không lưu gì. Giữ bản chính xác. Giữ © năm tự cập nhật.
+- **Bộ 6 câu hỏi chẩn đoán mới**: thiếu so với yêu cầu 8–10 câu, làm hỏng bộ chấm điểm; giữ bộ 9–10 câu hiện tại.
+- **Lời nhãn thương mại/thuật ngữ**: "Ma trận dạng bài tối ưu bởi AI", "khai phóng", "Socratic Prompting", "Feynman", "Peer Pressure" (brief cấm sáo rỗng và dịch nguyên cụm tiếng Anh), "kết quả tất yếu", "tối ưu hóa điểm số" (không hứa kết quả).
+- **Tên hai nút ở hero** giữ như brief: "Đặt lịch chẩn đoán miễn phí", "Tự kiểm tra trong 3 phút".

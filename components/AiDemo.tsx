@@ -49,8 +49,8 @@ export function AiDemo() {
       <div aria-hidden className="pointer-events-none absolute -left-32 top-1/3 size-[28rem] rounded-full bg-accent/10 blur-3xl" />
       <div className="container-x relative">
         <SectionHead light eyebrow="Học cùng AI, đúng cách"
-          title="Ba mẹ lo con dùng AI để chép bài? Hãy xem cùng một bài toán, hai cách dùng."
-          lead="AI không xấu cũng không tốt. Khác biệt nằm ở việc ai là người suy nghĩ. EduNavigator dạy học sinh dùng AI để được hỏi, không để được giải hộ." />
+          title="Ba mẹ lo con dùng AI để chép bài? Hãy xem cùng một bài toán, hai cách dùng AI."
+          lead="Bản thân AI không làm học sinh lười suy nghĩ. Khác biệt nằm ở việc ai là người suy nghĩ. EduNavigator dạy học sinh dùng AI để được hỏi lại và gợi ý, không để được giải hộ." />
 
         <div className="mt-8 grid gap-6 lg:grid-cols-[1fr_1.35fr]">
           <div>

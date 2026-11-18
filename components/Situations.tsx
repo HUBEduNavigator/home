@@ -32,8 +32,8 @@ export function Situations() {
                   </m.p>
                 </AnimatePresence>
                 <p className="mt-4 border-t border-line pt-4 text-muted">
-                  <strong className="text-ink">EduNavigator làm gì: </strong>
-                  {c.handling}
+                  <strong className="text-ink">HUB làm gì: </strong>
+                  {c.handling[audience]}
                 </p>
                 <button
                   className="mt-auto inline-flex min-h-11 items-center gap-1.5 self-start pt-4 font-semibold text-accenttext underline-offset-4 hover:underline"

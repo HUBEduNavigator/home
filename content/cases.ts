@@ -4,7 +4,7 @@ export type Case = {
   id: CaseId;
   title: string;
   situation: Dual;
-  handling: string;
+  handling: Dual;
 };
 
 export const cases: Case[] = [
@@ -13,60 +13,80 @@ export const cases: Case[] = [
     title: "Áp lực đồng lứa",
     situation: {
       parent:
-        "Con hay kể bạn này giỏi, bạn kia học thêm ba nơi, rồi im lặng hoặc nói “con học dở lắm”. Việc học dần bị né tránh.",
+        "Con hay nhắc tới thành tích của bạn bè hoặc lịch học thêm dày đặc của các bạn, rồi thu mình lại, nói con kém hơn người ta và dần né tránh việc học.",
       student:
-        "Bạn bè ai cũng như đang đi lên, còn bạn thì thấy mình tụt lại và không biết bắt đầu từ đâu.",
+        "Bạn thấy choáng ngợp khi nhìn bạn bè ai cũng đang tiến lên, còn mình thì chưa biết bứt lên từ đâu, và dần mất tự tin.",
     },
-    handling:
-      "Cùng em tách “bạn bè giỏi” ra khỏi “mình đang kẹt ở đâu”, rồi chọn một mục tiêu nhỏ, đo được, để em thấy mình tiến lên bằng chính bài của mình.",
+    handling: {
+      parent:
+        "HUB cùng con gỡ thói quen so sánh với bạn bè, đưa sự chú ý về lộ trình của riêng con bằng những mục tiêu nhỏ, vừa sức, để mỗi tuần con thấy được mình đã tiến lên thế nào.",
+      student:
+        "HUB cùng bạn gỡ áp lực so sánh: xem rõ mình mạnh và yếu ở đâu, rồi chia nhỏ mục tiêu thành những việc làm được trong tuần để lấy lại cảm giác mình đang làm chủ việc học.",
+    },
   },
   {
     id: "gaps",
     title: "Muốn học nhưng hổng kiến thức gốc",
     situation: {
       parent:
-        "Con có muốn học và ngồi vào bàn đàng hoàng, nhưng bài mới nào cũng vướng vì thiếu kiến thức lớp dưới. Ba mẹ không biết cho con học lại từ đâu.",
+        "Con học nghiêm túc, chịu ngồi vào bàn, nhưng bài mới nào cũng vấp vì thiếu kiến thức nền của các lớp dưới. Gia đình chưa biết nên cho con ôn lại từ đâu.",
       student:
-        "Bạn muốn học, nhưng cứ gặp bài mới là bị vướng vì phần cũ chưa chắc, mà không biết phải lùi lại tới đâu thì đủ.",
+        "Bạn muốn cố gắng, nhưng nghe giảng trên lớp rất khó hiểu vì kiến thức nền bị đứt từ trước. Càng làm bài mới càng rối và nản.",
     },
-    handling:
-      "Làm một bản chẩn đoán để khoanh đúng những mắt xích đang thiếu, rồi xếp thứ tự lấp lại, bắt đầu từ chỗ nhỏ nhất đang chặn bài hiện tại.",
+    handling: {
+      parent:
+        "Làm bài chẩn đoán để khoanh đúng phần kiến thức nền bị hổng, rồi xếp thứ tự lấp lại: xử lý trước những mắt xích đang chặn bài học hiện tại.",
+      student:
+        "Tìm ra đúng những khái niệm nền bạn đang thiếu, rồi lấp lại từng bước theo thứ tự gọn gàng để bắt nhịp lại với bài trên lớp.",
+    },
   },
   {
     id: "inefficient",
     title: "Học nhiều nhưng hiệu quả thấp",
     situation: {
       parent:
-        "Đã cho con học thêm nhiều nơi, thời gian học dài, nhưng điểm số và sự tự tin của con vẫn đứng yên.",
+        "Con học thêm nhiều nơi, ngồi học mỗi ngày rất lâu, nhưng điểm số và khả năng tự làm bài vẫn không khá lên.",
       student:
-        "Bạn học nhiều, làm nhiều bài, nhưng cuối cùng vẫn quên và vẫn sai những lỗi cũ.",
+        "Lịch học ở trường và học thêm kín cả tuần, bạn mệt, nhưng gặp đề đổi cách hỏi một chút là lúng túng vì quen học thuộc theo mẫu.",
     },
-    handling:
-      "Xem lại cách học thực tế: học thế nào, ôn lúc nào, tự kiểm tra ra sao. Sau đó đổi từng thói quen một, bắt đầu từ thói quen tốn thời gian nhất mà ít hiệu quả nhất.",
+    handling: {
+      parent:
+        "Xem lại cách học thực tế của con: ghi chép thế nào, ôn lúc nào, tự kiểm tra ra sao. Sau đó đổi dần từng thói quen, bắt đầu từ thói quen tốn thời gian mà ít hiệu quả nhất.",
+      student:
+        "Cùng bạn xem lại cách ghi chép, ôn tập và giải bài, rồi đổi từng thói quen một để thời gian học thực sự biến thành hiểu bài.",
+    },
   },
   {
     id: "nomentor",
     title: "Khó tìm người kèm lại từ nền tảng",
     situation: {
       parent:
-        "Ba mẹ đã hỏi nhiều nơi, nhưng đa số chỉ nhận đi tiếp chương trình đang học. Ít ai nhận dạy lại từ nền tảng cho con.",
+        "Gia đình đã hỏi nhiều trung tâm và gia sư, nhưng đa số chỉ nhận đi tiếp chương trình đang học. Rất ít nơi nhận dạy lại từ đầu cho học sinh mất gốc ở giai đoạn chuyển cấp.",
       student:
-        "Bạn muốn học lại từ đầu, nhưng nơi nào cũng bắt đầu từ bài đang học trên lớp.",
+        "Sang cấp mới, kiến thức tăng nhanh trong khi phần gốc ở cấp dưới chưa vững, mà lớp học thêm nào cũng chạy theo chương trình mới nên bạn không theo kịp.",
     },
-    handling:
-      "Bắt đầu từ điểm xuất phát thật của em, kể cả khi đó là kiến thức của vài lớp trước, và đi đủ chậm để em theo kịp.",
+    handling: {
+      parent:
+        "Bắt đầu từ điểm xuất phát thật của con, kể cả khi chỗ hổng nằm ở chương trình vài năm trước, và đi theo nhịp con theo kịp.",
+      student:
+        "Bắt đầu từ đúng mức hiện tại của bạn, nối lại kiến thức giữa các lớp với tốc độ vừa sức.",
+    },
   },
   {
     id: "grade5",
     title: "Lớp 5 chuẩn bị lên THCS",
     situation: {
       parent:
-        "Con đang học lớp 5, sắp lên cấp 2. Ba mẹ muốn con quen nhịp học mới trước khi vào lớp 6, nhưng chưa biết chuẩn bị gì ngoài học trước bài.",
+        "Con đang học lớp 5, sắp lên THCS với nhiều môn mới và cách học mới. Ba mẹ muốn con được chuẩn bị tốt trước khi vào lớp 6, thay vì chỉ học trước chương trình.",
       student:
-        "Bạn sắp lên lớp 6, vừa háo hức vừa lo vì chưa biết cấp 2 khác cấp 1 ở chỗ nào.",
+        "Bạn đang ở năm cuối tiểu học, sắp lên cấp 2 với nhiều môn hơn và phải tự giác hơn, không còn được nhắc từng việc như trước.",
     },
-    handling:
-      "Chuẩn bị ba thứ: thói quen tự học (ghi chép, quản lý thời gian), cách hỏi khi chưa hiểu, và cách dùng AI an toàn. Trọng tâm không phải học trước bài lớp 6.",
+    handling: {
+      parent:
+        "Chuẩn bị ba thứ: thói quen tự học (ghi chép, quản lý thời gian), cách hỏi khi chưa hiểu, và cách dùng AI an toàn. Trọng tâm không phải học trước bài lớp 6.",
+      student:
+        "Tập ba thứ: ghi chép, tự lập kế hoạch học trong tuần, và hỏi khi chưa hiểu, kể cả hỏi AI cho đúng cách. Nhờ vậy vào lớp 6 bạn đỡ bỡ ngỡ.",
+    },
   },
 ];
 

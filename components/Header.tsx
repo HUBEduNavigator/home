@@ -9,13 +9,13 @@ import { EASE } from "./motion";
 import { ThemeToggle } from "./ThemeToggle";
 
 const links = [
-  ["khi-nao", "Khi nào cần"],
+  ["khi-nao", "Vấn đề thường gặp"],
   ["tu-kiem-tra", "Tự kiểm tra"],
   ["so-sanh", "Mentor và gia sư"],
   ["quy-trinh", "Quy trình"],
   ["hoc-cung-ai", "Học cùng AI"],
   ["nguoi-dong-hanh", "Người đồng hành"],
-  ["goi", "Gói dịch vụ"],
+  ["goi", "Theo cấp học"],
   ["hoi-dap", "Hỏi đáp"],
 ] as const;
 

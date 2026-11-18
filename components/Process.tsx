@@ -34,9 +34,9 @@ export function Process() {
               </m.span>
               <h3 className="text-xl font-semibold">{s.name}</h3>
               <dl className="mt-3 grid gap-x-6 gap-y-2 md:grid-cols-[9rem_1fr] md:gap-y-3">
-                <dt className="font-semibold text-muted">Làm gì</dt><dd className="mb-2 md:mb-0">{s.what}</dd>
-                <dt className="font-semibold text-muted">Ai làm</dt><dd className="mb-2 md:mb-0">{s.who}</dd>
-                <dt className="font-semibold text-muted">Nhận được</dt>
+                <dt className="font-semibold text-muted">Nội dung</dt><dd className="mb-2 md:mb-0">{s.what}</dd>
+                <dt className="font-semibold text-muted">Ai tham gia</dt><dd className="mb-2 md:mb-0">{s.who}</dd>
+                <dt className="font-semibold text-muted">Sản phẩm</dt>
                 <dd className="mb-2 md:mb-0"><span className="rounded-md bg-accent/20 px-1.5 py-0.5 font-medium">{s.product}</span></dd>
                 <dt className="font-semibold text-muted">Thời lượng</dt>
                 <dd>{s.duration ?? "Thống nhất khi tư vấn"}</dd>
