@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [main, claude/new-session-jga0ez]
+    branches: [main]
   workflow_dispatch:
 
 permissions:

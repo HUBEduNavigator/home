@@ -12,7 +12,7 @@ npm run build    # xuất web tĩnh vào thư mục out/
 
 ## Deploy (GitHub Pages)
 
-Workflow `.github/workflows/deploy.yml` tự build và đăng khi push `main` (và nhánh `claude/new-session-jga0ez`). `basePath` lấy theo tên repo.
+Workflow `.github/workflows/deploy.yml` tự build và đăng khi push `main`. `basePath` lấy theo tên repo.
 
 Bật Pages một lần: Settings → Pages → Source: **GitHub Actions**. Nếu deploy từ nhánh khác `main` bị chặn, vào Settings → Environments → github-pages để cho phép nhánh đó, hoặc merge vào `main`.
 
