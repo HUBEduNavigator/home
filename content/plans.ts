@@ -1,24 +1,12 @@
 /** `price: null` → giao diện hiện "Liên hệ để được tư vấn". */
 export const plansIntro = {
   eyebrow: "Dành cho ai",
-  title: "Định hướng theo ba nhóm cấp học",
-  lead: "Mỗi nhóm đều làm theo cùng một cách gọn: 1–2 buổi gặp mặt định hướng, rồi hướng dẫn khai thác đúng bộ tài liệu trên web tài liệu của HUB EduNavigator.",
+  title: "Định hướng theo 2 cấp học trọng tâm",
+  lead: "Cả hai cấp đều làm theo cùng một cách gọn: 1–2 buổi gặp mặt định hướng, rồi hướng dẫn khai thác đúng bộ tài liệu trên web tài liệu của HUB EduNavigator.",
   note: "Dịch vụ gói gọn trong 1–2 buổi gặp mặt định hướng và chỉ dẫn khai thác kho tài liệu phù hợp. Lịch gặp và chi phí sẽ được trao đổi rõ qua Zalo trước khi bắt đầu.",
 };
 
 export const plans = [
-  {
-    id: "g5",
-    name: "Lớp 5",
-    tag: "Chuẩn bị lên THCS · cấp tiểu học chỉ nhận lớp 5",
-    focus: [
-      "Gợi mở nhận thức và tư duy tự học sớm trước khi lên THCS",
-      "Hướng dẫn thói quen ghi chép, sắp xếp thời gian và cách đặt câu hỏi khi chưa hiểu bài",
-      "Chỉ cách làm quen với bộ tài liệu nền tảng tiền THCS phù hợp lứa tuổi",
-    ],
-    cta: "Đặt lịch định hướng cho lớp 5",
-    price: null as string | null,
-  },
   {
     id: "thcs",
     name: "THCS",

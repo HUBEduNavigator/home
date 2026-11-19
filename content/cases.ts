@@ -72,22 +72,6 @@ export const cases: Case[] = [
         "Bắt đầu từ đúng trình độ thật của bạn, rồi chỉ cách tự hệ thống lại kiến thức giữa các lớp bằng bộ tài liệu chia theo từng mức độ.",
     },
   },
-  {
-    id: "grade5",
-    title: "Lớp 5 chuẩn bị lên THCS",
-    situation: {
-      parent:
-        "Con đang học lớp 5, sắp lên THCS với nhiều môn mới và cách học mới. Ba mẹ muốn con được chuẩn bị tốt trước khi vào lớp 6, thay vì chỉ học trước chương trình.",
-      student:
-        "Bạn đang ở năm cuối tiểu học, sắp lên cấp 2 với nhiều môn hơn và phải tự giác hơn, không còn được nhắc từng việc như trước.",
-    },
-    handling: {
-      parent:
-        "Gợi mở nhận thức sớm và định hướng con cách ghi chép, tự quản lý bài vở, biết đặt câu hỏi đúng chỗ, và làm quen với tài liệu tự học trước THCS. Trọng tâm không phải học trước bài lớp 6.",
-      student:
-        "Hướng dẫn bạn tư duy tự học sớm, cách chia thời gian và chọn đúng bộ tài liệu nền tảng chuyển tiếp từ lớp 5 lên lớp 6, để vào cấp 2 đỡ bỡ ngỡ.",
-    },
-  },
 ];
 
 export const caseById = Object.fromEntries(cases.map((c) => [c.id, c])) as Record<CaseId, Case>;

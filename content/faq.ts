@@ -30,10 +30,6 @@ export const faq: { q: string; a: string }[] = [
     a: "Chuyện này rất thường gặp, và thường có lý do: sợ sai, mệt vì học không hiệu quả, hoặc thấy mình thua bạn. HUB bắt đầu bằng việc nghe con nói, không bằng việc ép học. Nếu con chưa muốn tham gia, HUB sẽ nói thẳng với ba mẹ là nên chờ thêm.",
   },
   {
-    q: "Vì sao cấp tiểu học chỉ nhận học sinh lớp 5?",
-    a: "Mô hình tập trung vào nhận thức và cách tự học, nên phù hợp nhất với giai đoạn chuẩn bị chuyển lên THCS: lớp 5 là lúc bổ sung nhận thức sớm và dựng tâm thế vững vàng trước khi sang môi trường mới.",
-  },
-  {
     q: "Dữ liệu của con có bị lưu không?",
     a: "Không. Web này không có máy chủ và không lưu câu trả lời hay thông tin liên hệ. Thông tin chỉ được gửi đi khi ba mẹ hoặc bạn tự bấm gửi qua Zalo.",
   },

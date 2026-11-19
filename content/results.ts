@@ -250,66 +250,6 @@ export const results: Record<CaseId, CaseResult> = {
       },
     ],
   },
-  grade5: {
-    why: {
-      parent:
-        "Con đang học lớp 5, nên điều đáng chuẩn bị nhất lúc này không phải kiến thức lớp 6 mà là thói quen tự học và sự tự tin khi bước vào môi trường mới.",
-      student:
-        "Bạn đang học lớp 5, nên điều đáng chuẩn bị nhất lúc này không phải bài lớp 6 mà là thói quen tự học và sự tự tin khi vào môi trường mới.",
-    },
-    
-    docsLabel: "Mở web tài liệu: tài liệu nền tảng tiền THCS",
-    actions: [
-      {
-        title: "Tự làm “lịch một ngày” cho thứ Bảy",
-        time: "15 phút",
-        steps: {
-          parent: [
-            "Đưa con một tờ giấy và hỏi: “thứ Bảy này con muốn làm những gì?”. Để con tự viết.",
-            "Con tự ghi giờ và chọn việc nào làm trước, việc nào làm sau.",
-            "Cuối ngày, cùng nhìn lại: việc nào xong, việc nào chưa, vì sao.",
-          ],
-          student: [
-            "Lấy một tờ giấy, viết những việc bạn muốn làm vào thứ Bảy.",
-            "Ghi giờ và chọn việc nào làm trước, việc nào làm sau.",
-            "Cuối ngày nhìn lại: việc nào xong, việc nào chưa, vì sao.",
-          ],
-        },
-      },
-      {
-        title: "Tập ghi chép một đoạn ngắn",
-        time: "10 phút, 3 lần trong tuần",
-        steps: {
-          parent: [
-            "Chọn một đoạn ngắn (bài đọc, bản tin trẻ em, đoạn sách giáo khoa).",
-            "Cho con đọc và ghi lại ý chính bằng 3 câu hoặc một sơ đồ nhỏ, bằng lời của con.",
-            "Hỏi: “nếu kể lại cho bạn chưa đọc, con sẽ nói gì?”.",
-          ],
-          student: [
-            "Chọn một đoạn ngắn (bài đọc, bản tin, đoạn sách giáo khoa).",
-            "Ghi ý chính bằng 3 câu hoặc một sơ đồ nhỏ, bằng lời của bạn.",
-            "Thử kể lại cho một người chưa đọc. Chỗ nào kể không trôi là chỗ cần đọc lại.",
-          ],
-        },
-      },
-      {
-        title: "Tập hỏi khi chưa hiểu",
-        time: "5 phút mỗi ngày",
-        steps: {
-          parent: [
-            "Mỗi ngày, hỏi con: “hôm nay có chỗ nào con chưa hiểu không?”.",
-            "Nếu có, giúp con viết thành một câu hỏi hoàn chỉnh để hôm sau hỏi thầy cô.",
-            "Khen việc con dám hỏi, không khen việc “biết rồi”.",
-          ],
-          student: [
-            "Mỗi ngày, tự hỏi: “hôm nay có chỗ nào mình chưa hiểu không?”.",
-            "Nếu có, viết nó thành một câu hỏi rõ ràng để hôm sau hỏi thầy cô.",
-            "Hỏi là cách học nhanh nhất, không phải dấu hiệu của việc kém.",
-          ],
-        },
-      },
-    ],
-  },
 };
 
 /** Khi không có trường hợp nào nổi bật. */

@@ -19,7 +19,7 @@ export const resources = {
   ],
   filters: [
     { label: "Môn", values: ["Toán", "Ngữ văn", "Tiếng Anh", "…"] },
-    { label: "Lớp", values: ["5", "6", "7", "8", "9", "10", "11", "12"] },
+    { label: "Lớp", values: ["6", "7", "8", "9", "10", "11", "12"] },
     { label: "Loại tài liệu", values: ["Nền tảng", "Nâng cao", "Đề thi dạng bài chung"] },
     { label: "Mức độ", values: ["Dễ", "Trung bình", "Khó", "Nâng cao"] },
   ],

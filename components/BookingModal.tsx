@@ -8,7 +8,7 @@ import type { Audience, CaseId } from "@/content/types";
 import { useApp, type Prefill } from "./AppContext";
 import { EASE } from "./motion";
 
-const GRADES: Record<string, string> = { "5": "Lớp 5", thcs: "THCS (lớp 6–9)", thpt: "THPT (lớp 10–12)" };
+const GRADES: Record<string, string> = { thcs: "THCS (lớp 6–9)", thpt: "THPT (lớp 10–12)" };
 const LABELS = ["Người đặt", "Lớp", "Vấn đề chính", "Khung giờ", "Liên hệ", "Đồng ý", "Tóm tắt"];
 const LAST = LABELS.length - 1;
 const phoneOk = (v: string) => /^(0|\+84)\d{9}$/.test(v.replace(/[\s.\-]/g, ""));

@@ -7,7 +7,7 @@ export const site = {
   short: "EduNavigator",
   slogan: "Định hướng tự học, bứt phá tương lai.",
   description:
-    "Cố vấn định hướng phương pháp tự học trong 1–2 buổi gặp mặt, kèm hệ thống tài liệu phân tích dạng bài dành cho học sinh lớp 5, THCS và THPT.",
+    "Cố vấn định hướng phương pháp tự học trong 1–2 buổi gặp mặt, kèm hệ thống tài liệu phân tích dạng bài dành cho học sinh THCS và THPT.",
   siteUrl: process.env.NEXT_PUBLIC_SITE_URL ?? "https://hubedunavigator.github.io/home",
   basePath: process.env.NEXT_PUBLIC_BASE_PATH ?? "",
 

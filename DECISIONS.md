@@ -72,3 +72,7 @@ Câu 0 (mọi người): chọn lớp 5 / THCS / THPT. Thang trả lời mặc �
 - **Bỏ chữ "miễn phí" khỏi nút đặt lịch** vì bản mới không nói buổi gặp miễn phí; chi phí trao đổi qua Zalo. "3 việc làm tại nhà" ở công cụ tự kiểm tra vẫn miễn phí.
 - **Không áp dụng**: bộ 6 câu chẩn đoán cũ (giữ bộ 9–10 câu), lời "tâm thư" (không còn khung này), "Tuyên bố bảo mật lưu trên thiết bị" (web không lưu gì).
 - **Chữ "chặng" trên hình la bàn** đổi thành: Mất phương hướng, Chẩn đoán, Định hướng, Tài liệu đúng, Tự chủ.
+
+## Bỏ đối tượng lớp 5 (theo yêu cầu của HUB)
+- Chỉ còn hai cấp: THCS (lớp 6–9) và THPT (lớp 10–12). Đã gỡ tình huống "Lớp 5", thẻ gói Lớp 5, câu FAQ về tiểu học, lựa chọn lớp 5 ở công cụ tự kiểm tra và đặt lịch, nhánh kết quả `grade5` và câu hỏi tự quản lý riêng cho lớp 5.
+- Công cụ tự kiểm tra còn 9 câu (1 câu chọn cấp học + 8 câu), 4 trường hợp.

@@ -3,19 +3,19 @@ import type { CaseId } from "@/content/types";
 
 export type Answers = Record<string, number>; // questionId -> level 0..3 (theo thứ tự hiển thị)
 
-export function visibleQuestions(grade: Grade | null) {
-  return questions.filter((q) => !q.onlyGrade || (grade && q.onlyGrade.includes(grade)));
+export function visibleQuestions(_grade?: Grade | null) {
+  return questions;
 }
 
 export function optionsOf(q: (typeof questions)[number]) {
   return q.options ?? freqLabels;
 }
 
-export function score(grade: Grade, answers: Answers): { top: CaseId[]; shares: Record<CaseId, number> } {
-  const ids: CaseId[] = ["pressure", "gaps", "inefficient", "nomentor", "grade5"];
+export function score(_grade: Grade, answers: Answers): { top: CaseId[]; shares: Record<CaseId, number> } {
+  const ids: CaseId[] = ["pressure", "gaps", "inefficient", "nomentor"];
   const got: Record<string, number> = {};
   const max: Record<string, number> = {};
-  for (const q of visibleQuestions(grade)) {
+  for (const q of visibleQuestions()) {
     const lvl = answers[q.id] ?? 0;
     const eff = q.reverse ? 3 - lvl : lvl;
     for (const [c, w] of Object.entries(q.weights)) {
@@ -25,9 +25,7 @@ export function score(grade: Grade, answers: Answers): { top: CaseId[]; shares: 
   }
   const shares = {} as Record<CaseId, number>;
   for (const c of ids) {
-    let s = max[c] ? (got[c] ?? 0) / max[c] : 0;
-    if (c === "grade5") s = grade === "5" ? scoring.grade5Base + (1 - scoring.grade5Base) * s : 0;
-    shares[c] = s;
+    shares[c] = max[c] ? (got[c] ?? 0) / max[c] : 0;
   }
   const best = Math.max(...Object.values(shares));
   const top = ids

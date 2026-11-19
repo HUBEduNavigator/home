@@ -6,17 +6,14 @@ import type { CaseId, Dual } from "./types";
  * - `weights`: mỗi mức trả lời được nhân với trọng số này rồi cộng vào điểm của từng trường hợp.
  * - Điểm của một trường hợp được chia cho điểm tối đa có thể đạt (chỉ tính các câu đã hiện) → tỉ lệ 0–1.
  * - Trường hợp "nổi bật" nếu tỉ lệ ≥ minShare VÀ ≥ closeToTop × tỉ lệ cao nhất. Tối đa maxCases trường hợp.
- * - "Lớp 5" chỉ được tính khi người dùng chọn lớp 5 ở câu đầu tiên.
  */
 export const scoring = {
   minShare: 0.4,
   closeToTop: 0.85,
   maxCases: 2,
-  /** Chọn lớp 5 thì trường hợp "Lớp 5" luôn được cộng sẵn phần này (tỉ lệ 0–1). */
-  grade5Base: 0.5,
 };
 
-export type Grade = "5" | "thcs" | "thpt";
+export type Grade = "thcs" | "thpt";
 
 export const freqLabels = ["Hầu như không", "Thỉnh thoảng", "Khá thường xuyên", "Gần như luôn luôn"];
 export const agreeLabels = ["Không đúng", "Đúng một phần", "Khá đúng", "Rất đúng"];
@@ -26,7 +23,6 @@ export const gradeQuestion = {
   id: "grade",
   text: { parent: "Con đang học lớp mấy?", student: "Bạn đang học lớp mấy?" } as Dual,
   options: [
-    { value: "5" as Grade, label: "Lớp 5" },
     { value: "thcs" as Grade, label: "THCS (lớp 6–9)" },
     { value: "thpt" as Grade, label: "THPT (lớp 10–12)" },
   ],
@@ -38,7 +34,6 @@ type Q = {
   weights: Partial<Record<CaseId, number>>;
   reverse?: boolean;
   options?: string[];
-  onlyGrade?: Grade[];
 };
 
 export const questions: Q[] = [
@@ -119,18 +114,5 @@ export const questions: Q[] = [
     },
     weights: { nomentor: 2, inefficient: 1, pressure: 1 },
     options: ["Có, đều đặn", "Thỉnh thoảng", "Hiếm khi", "Không có ai"],
-  },
-  {
-    id: "self-manage",
-    text: {
-      parent:
-        "Con có tự soạn cặp, ghi lịch bài tập và chủ động bắt đầu làm bài mà không cần nhắc từng việc không?",
-      student:
-        "Bạn có tự soạn cặp, ghi lịch bài tập và chủ động bắt đầu làm bài mà không cần ai nhắc không?",
-    },
-    weights: { grade5: 3 },
-    reverse: true,
-    options: abilityLabels,
-    onlyGrade: ["5"],
   },
 ];
