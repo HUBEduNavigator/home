@@ -19,9 +19,9 @@ export const cases: Case[] = [
     },
     handling: {
       parent:
-        "HUB cùng con gỡ thói quen so sánh với bạn bè, đưa sự chú ý về lộ trình của riêng con bằng những mục tiêu nhỏ, vừa sức, để mỗi tuần con thấy được mình đã tiến lên thế nào.",
+        "Giúp con tách áp lực so sánh khỏi con đường của riêng mình: xác định mục tiêu vừa sức và cách tự học rõ ràng để con lấy lại tự tin từ chính tiến bộ của mình.",
       student:
-        "HUB cùng bạn gỡ áp lực so sánh: xem rõ mình mạnh và yếu ở đâu, rồi chia nhỏ mục tiêu thành những việc làm được trong tuần để lấy lại cảm giác mình đang làm chủ việc học.",
+        "Cùng bạn nhìn rõ điểm mạnh, điểm yếu của riêng mình và chọn đúng phần tài liệu vừa sức để thấy kết quả thật sớm.",
     },
   },
   {
@@ -29,15 +29,15 @@ export const cases: Case[] = [
     title: "Muốn học nhưng hổng kiến thức gốc",
     situation: {
       parent:
-        "Con học nghiêm túc, chịu ngồi vào bàn, nhưng bài mới nào cũng vấp vì thiếu kiến thức nền của các lớp dưới. Gia đình chưa biết nên cho con ôn lại từ đâu.",
+        "Con có tinh thần muốn cố gắng, nhưng hổng kiến thức lớp dưới nên nghe giảng bài mới rất khó vào. Gia đình chưa biết nên cho con ôn lại từ đâu.",
       student:
         "Bạn muốn cố gắng, nhưng nghe giảng trên lớp rất khó hiểu vì kiến thức nền bị đứt từ trước. Càng làm bài mới càng rối và nản.",
     },
     handling: {
       parent:
-        "Làm bài chẩn đoán để khoanh đúng phần kiến thức nền bị hổng, rồi xếp thứ tự lấp lại: xử lý trước những mắt xích đang chặn bài học hiện tại.",
+        "Khoanh đúng phần kiến thức nền đang hổng, vạch thứ tự ôn lại ngắn gọn, rồi chỉ con dùng đúng bộ tài liệu nền tảng trên web tài liệu.",
       student:
-        "Tìm ra đúng những khái niệm nền bạn đang thiếu, rồi lấp lại từng bước theo thứ tự gọn gàng để bắt nhịp lại với bài trên lớp.",
+        "Tìm nhanh những mắt xích nền bạn cần vá trước, rồi chỉ bạn đúng bộ tài liệu nền tảng phù hợp để tự học lại mà không bị lan man.",
     },
   },
   {
@@ -45,31 +45,31 @@ export const cases: Case[] = [
     title: "Học nhiều nhưng hiệu quả thấp",
     situation: {
       parent:
-        "Con học thêm nhiều nơi, ngồi học mỗi ngày rất lâu, nhưng điểm số và khả năng tự làm bài vẫn không khá lên.",
+        "Lịch học ở trường và học thêm kín cả tuần, nhưng điểm vẫn đứng yên vì con học thụ động, chưa nắm bản chất dạng bài, hoặc quen dùng AI để tham khảo, chép đáp án đối phó.",
       student:
-        "Lịch học ở trường và học thêm kín cả tuần, bạn mệt, nhưng gặp đề đổi cách hỏi một chút là lúng túng vì quen học thuộc theo mẫu.",
+        "Lịch học ở trường và học thêm kín cả tuần, bạn mệt, nhưng gặp đề đổi cách hỏi một chút là lúng túng vì quen học theo mẫu hoặc chép lời giải có sẵn.",
     },
     handling: {
       parent:
-        "Xem lại cách học thực tế của con: ghi chép thế nào, ôn lúc nào, tự kiểm tra ra sao. Sau đó đổi dần từng thói quen, bắt đầu từ thói quen tốn thời gian mà ít hiệu quả nhất.",
+        "Xem lại cách học thực tế của con, chuyển từ học vẹt sang nắm bản chất dạng bài, và hướng dẫn con khai thác kho tài liệu đã phân loại theo dạng bài.",
       student:
-        "Cùng bạn xem lại cách ghi chép, ôn tập và giải bài, rồi đổi từng thói quen một để thời gian học thực sự biến thành hiểu bài.",
+        "Định hướng lại cách tiếp cận bài theo bản chất dạng bài, rồi chỉ bạn dùng bộ tài liệu đã khoanh vùng để thời gian học thực sự biến thành hiểu bài.",
     },
   },
   {
     id: "nomentor",
-    title: "Khó tìm người kèm lại từ nền tảng",
+    title: "Cấp 2, cấp 3 khó tìm người kèm lại từ đầu",
     situation: {
       parent:
-        "Gia đình đã hỏi nhiều trung tâm và gia sư, nhưng đa số chỉ nhận đi tiếp chương trình đang học. Rất ít nơi nhận dạy lại từ đầu cho học sinh mất gốc ở giai đoạn chuyển cấp.",
+        "Ở bậc THCS và THPT, rất ít giáo viên hay lớp học thêm nhận dạy lại nền tảng từ đầu, vì đa số chỉ đi tiếp chương trình hiện hành.",
       student:
-        "Sang cấp mới, kiến thức tăng nhanh trong khi phần gốc ở cấp dưới chưa vững, mà lớp học thêm nào cũng chạy theo chương trình mới nên bạn không theo kịp.",
+        "Lên cấp 2, cấp 3 khối lượng bài tăng nhanh, lớp học thêm nào cũng dạy tiếp bài mới nên bạn rất khó tìm chỗ giúp mình dựng lại phần gốc.",
     },
     handling: {
       parent:
-        "Bắt đầu từ điểm xuất phát thật của con, kể cả khi chỗ hổng nằm ở chương trình vài năm trước, và đi theo nhịp con theo kịp.",
+        "Không ép con chạy theo bài mới khi gốc chưa vững. HUB định hướng cách tự vá lỗ hổng và chỉ con bộ tài liệu nền tảng, dạng bài phù hợp đúng điểm xuất phát của con.",
       student:
-        "Bắt đầu từ đúng mức hiện tại của bạn, nối lại kiến thức giữa các lớp với tốc độ vừa sức.",
+        "Bắt đầu từ đúng trình độ thật của bạn, rồi chỉ cách tự hệ thống lại kiến thức giữa các lớp bằng bộ tài liệu chia theo từng mức độ.",
     },
   },
   {
@@ -83,9 +83,9 @@ export const cases: Case[] = [
     },
     handling: {
       parent:
-        "Chuẩn bị ba thứ: thói quen tự học (ghi chép, quản lý thời gian), cách hỏi khi chưa hiểu, và cách dùng AI an toàn. Trọng tâm không phải học trước bài lớp 6.",
+        "Gợi mở nhận thức sớm và định hướng con cách ghi chép, tự quản lý bài vở, biết đặt câu hỏi đúng chỗ, và làm quen với tài liệu tự học trước THCS. Trọng tâm không phải học trước bài lớp 6.",
       student:
-        "Tập ba thứ: ghi chép, tự lập kế hoạch học trong tuần, và hỏi khi chưa hiểu, kể cả hỏi AI cho đúng cách. Nhờ vậy vào lớp 6 bạn đỡ bỡ ngỡ.",
+        "Hướng dẫn bạn tư duy tự học sớm, cách chia thời gian và chọn đúng bộ tài liệu nền tảng chuyển tiếp từ lớp 5 lên lớp 6, để vào cấp 2 đỡ bỡ ngỡ.",
     },
   },
 ];

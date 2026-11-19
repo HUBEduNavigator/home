@@ -1,40 +1,35 @@
 export const compareRows = [
   {
+    label: "Thời gian",
+    tutor: "Kéo dài liên tục theo học kỳ hoặc cả năm học để bám tiến độ bài vở trên lớp.",
+    mentor: "Chỉ 1–2 buổi gặp mặt để trao định hướng, tư duy đúng, cách tự học hiệu quả và chỉ dẫn nguồn tài liệu phù hợp.",
+  },
+  {
     label: "Mục tiêu",
-    tutor: "Hiểu và làm được bài của môn đang học, bám tiến độ trên lớp hoặc kịp kỳ kiểm tra sắp tới.",
-    mentor: "Học sinh tự học được: tự nắm bản chất kiến thức và tự xử lý bài khó, kể cả khi không còn ai ngồi cạnh.",
+    tutor: "Hiểu bài trên lớp, làm xong bài tập về nhà hoặc luyện đề cấp tốc cho kỳ thi trước mắt.",
+    mentor: "Học sinh nắm được cách tự học chủ động, biết tự xử lý bài theo bản chất mà không phụ thuộc người kèm.",
   },
   {
     label: "Cách làm",
-    tutor: "Giảng lại lý thuyết, hướng dẫn bài mẫu, sửa lỗi sai và giao thêm đề để luyện theo từng chuyên đề.",
-    mentor: "Lắng nghe và tìm nguyên nhân gốc (kiến thức, cách học hay tâm lý), dựng chiến lược tự học riêng, hướng dẫn dùng AI để tự nghiên cứu.",
+    tutor: "Giảng lại kiến thức môn học, chữa bài tập cụ thể và giao thêm bài luyện sau mỗi buổi.",
+    mentor: "Gặp mặt hỏi đáp và chẩn đoán vấn đề, truyền tư duy “tự học mà không học thuật”, rồi chỉ học sinh chọn đúng bộ tài liệu trên web tài liệu của HUB EduNavigator.",
   },
   {
     label: "Vai trò của học sinh",
-    tutor: "Nghe giảng, làm theo hướng dẫn và nhờ gia sư chữa khi gặp câu khó.",
-    mentor: "Là người làm chính: tự đặt câu hỏi, tự kiểm tra, tự đánh giá tiến độ. Mentor chỉ gợi mở và định hướng.",
+    tutor: "Nghe giảng, làm theo hướng dẫn và chờ gia sư sửa khi sai.",
+    mentor: "Tiếp nhận phương pháp, rồi chủ động tự học và luyện tập theo bộ tài liệu đã khoanh vùng đúng trình độ của mình.",
   },
   {
-    label: "Thời gian",
-    tutor: "Thường kéo dài theo năm học hoặc theo cấp học để bám chương trình trên trường.",
-    mentor: "Một giai đoạn có điểm dừng rõ. Mentor lùi dần khi học sinh đã quen và làm chủ cách học.",
-  },
-  {
-    label: "Kết quả mong đợi",
-    tutor: "Bài tập và điểm của môn được kèm khá lên trong thời gian còn gia sư hỗ trợ.",
-    mentor: "Học sinh có thói quen và cách học riêng dùng được lâu dài. Điểm số cải thiện là hệ quả của việc học đúng cách, không phải lời hứa.",
-  },
-  {
-    label: "Khi nào coi là xong việc",
-    tutor: "Điểm đạt mục tiêu hoặc đã qua kỳ thi.",
-    mentor: "Học sinh tự lập được kế hoạch ôn cho một tuần, tự tra cứu để gỡ bài khó và tự giải thích lại được bài vừa học.",
+    label: "Kết quả hướng tới",
+    tutor: "Bài tập và điểm kiểm tra khá lên trong thời gian còn học kèm.",
+    mentor: "Học sinh có tư duy đúng, có bộ tài liệu chuẩn để tự học và biết tự gỡ vướng lâu dài. Điểm số cải thiện là hệ quả, không phải lời hứa.",
   },
   {
     label: "Phù hợp khi",
-    tutor: "Con đã có cách học ổn, chỉ cần một người giảng sâu một môn, hoặc cần luyện sát một kỳ thi ngay trước mắt.",
-    mentor: "Con học nhiều mà không hiệu quả, hổng gốc, chịu áp lực so sánh, sắp chuyển cấp hoặc chưa biết cách tự học.",
+    tutor: "Con đã có cách tự học ổn, chỉ cần người dạy sâu một môn hoặc luyện đề sát kỳ thi.",
+    mentor: "Con học nhiều mà kém hiệu quả, mất gốc không biết bắt đầu từ đâu, chịu áp lực so sánh, hoặc quen chép bài từ AI mà chưa hiểu bản chất.",
   },
 ];
 
 export const compareNote =
-  "Hai cách làm không loại trừ nhau. Nhiều em vừa có gia sư cho một môn, vừa cần một mentor lo cách học chung. Nếu sau buổi chẩn đoán HUB thấy con cần gia sư hơn là mentor, HUB sẽ nói thẳng để gia đình chọn đúng.";
+  "Hai vai trò không loại trừ nhau. Sau 1–2 buổi định hướng, con vẫn có thể học thêm gia sư riêng cho một môn nếu cần. Nếu qua buổi gặp HUB thấy con cần gia sư kèm môn hơn là định hướng cách học, HUB sẽ nói thẳng. Nhiều học sinh hiện dùng AI sai cách, chỉ để tham khảo đối phó và chép lời giải có sẵn; định hướng đúng cách học cũng nhằm tránh điều này.";

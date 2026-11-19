@@ -7,12 +7,13 @@ export function Footer() {
         <div>
           <p className="font-display text-2xl font-semibold">{site.name}</p>
           <p className="mt-2 text-white/80">{site.slogan}</p>
+          <p className="mt-3 text-white/70">Định hướng tư duy và cách tự học trong 1–2 buổi gặp mặt, kèm kho tài liệu phân tích dạng bài cho học sinh phổ thông.</p>
         </div>
         <div>
           <p className="font-semibold">Liên hệ và liên kết</p>
           <ul className="mt-3 space-y-2 text-white/90">
             <li><a className="underline underline-offset-4" href={site.zaloUrl} target="_blank" rel="noopener noreferrer">Zalo {site.zaloNumber}</a></li>
-            <li><a className="underline underline-offset-4" href={site.bioUrl} target="_blank" rel="noopener noreferrer">Trang giới thiệu của HUB</a></li>
+            <li><a className="underline underline-offset-4" href={site.bioUrl} target="_blank" rel="noopener noreferrer">Trang giới thiệu của Bảo Huy (HUB)</a></li>
             <li><a className="underline underline-offset-4" href={site.docsUrl} target="_blank" rel="noopener noreferrer">Web tài liệu tự học</a></li>
           </ul>
         </div>

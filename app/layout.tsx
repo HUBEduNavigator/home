@@ -50,7 +50,7 @@ const jsonLd = {
   url: site.siteUrl,
   slogan: site.slogan,
   description: site.description,
-  founder: { "@type": "Person", name: "HUB" },
+  founder: [{ "@type": "Person", name: "Bảo Huy (HUB)" }, { "@type": "Person", name: "Bùi Trần Thạnh" }],
   contactPoint: [{ "@type": "ContactPoint", telephone: "+84346043094", contactType: "customer service", availableLanguage: "Vietnamese" }],
   sameAs: [site.bioUrl, site.docsUrl],
 };

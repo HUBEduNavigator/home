@@ -5,8 +5,8 @@ import { useEffect, useRef, useState } from "react";
 const nodes = [
   { x: 70, y: 500, label: "Mất phương hướng", side: "r" },
   { x: 320, y: 420, label: "Chẩn đoán", side: "l" },
-  { x: 80, y: 340, label: "Lộ trình", side: "r" },
-  { x: 320, y: 260, label: "Đồng hành", side: "l" },
+  { x: 80, y: 340, label: "Định hướng", side: "r" },
+  { x: 320, y: 260, label: "Tài liệu đúng", side: "l" },
   { x: 120, y: 180, label: "Tự chủ", side: "r" },
 ] as const;
 
@@ -69,7 +69,7 @@ export function CompassRoad() {
 
   return (
     <svg ref={wrap} viewBox="0 0 400 560" role="img"
-      aria-label="Con đường từ Mất phương hướng, qua Chẩn đoán, Lộ trình, Đồng hành tới Tự chủ, dẫn tới chiếc la bàn chỉ hướng"
+      aria-label="Con đường từ Mất phương hướng, qua Chẩn đoán, Định hướng, Tài liệu đúng tới Tự chủ, dẫn tới chiếc la bàn chỉ hướng"
       className="mx-auto h-auto w-full max-w-[26rem]">
       <defs>
         <linearGradient id="trail" x1="0" y1="1" x2="0" y2="0">

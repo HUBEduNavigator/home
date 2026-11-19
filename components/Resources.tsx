@@ -25,11 +25,20 @@ export function Resources() {
       <div className="container-x grid items-center gap-10 md:grid-cols-2">
         <Reveal>
           <p className="eyebrow">Kho tài liệu tự học</p>
-          <h2 className="h2 mt-2 text-balance">Tài liệu xếp theo môn, lớp, dạng bài và mức độ</h2>
+          <h2 className="h2 mt-2 text-balance">Kho tài liệu khoanh vùng theo dạng bài, thay cho thói quen chép bài từ AI</h2>
           <p className="lead mt-3">{resources.intro}</p>
+          <ul className="mt-5 space-y-3">
+            {resources.categories.map((c) => (
+              <li key={c.title} className="border-l-2 border-accent pl-4">
+                <p className="font-semibold">{c.title}</p>
+                <p className="text-muted">{c.detail}</p>
+              </li>
+            ))}
+          </ul>
+          <p className="mt-5 text-muted">{resources.note}</p>
           <p className="mt-3 text-sm font-semibold text-accenttext">{resources.status}</p>
           <a className="btn btn-primary mt-6" href={site.docsUrl} target="_blank" rel="noopener noreferrer">
-            Mở web tài liệu <ExternalLink size={16} aria-hidden />
+            Mở web tài liệu HUB EduNavigator <ExternalLink size={16} aria-hidden />
           </a>
         </Reveal>
         <m.div

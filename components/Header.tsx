@@ -9,13 +9,13 @@ import { EASE } from "./motion";
 import { ThemeToggle } from "./ThemeToggle";
 
 const links = [
-  ["khi-nao", "Vấn đề thường gặp"],
+  ["khi-nao", "Khi nào cần"],
   ["tu-kiem-tra", "Tự kiểm tra"],
   ["so-sanh", "Mentor và gia sư"],
-  ["quy-trinh", "Quy trình"],
-  ["hoc-cung-ai", "Học cùng AI"],
-  ["nguoi-dong-hanh", "Người đồng hành"],
-  ["goi", "Theo cấp học"],
+  ["quy-trinh", "Cách làm việc"],
+  ["tai-lieu", "Kho tài liệu"],
+  ["nguoi-dong-hanh", "Đội ngũ sáng lập"],
+  ["goi", "Đối tượng"],
   ["hoi-dap", "Hỏi đáp"],
 ] as const;
 
@@ -68,7 +68,7 @@ export function Header() {
         <div className="flex shrink-0 items-center gap-2">
           <ThemeToggle />
           <button className="btn btn-primary hidden whitespace-nowrap md:inline-flex" onClick={() => openBooking()}>
-            Đặt lịch miễn phí
+            Đặt lịch gặp mặt
           </button>
           <button
             aria-label={open ? "Đóng menu" : "Mở menu"}
@@ -108,7 +108,7 @@ export function Header() {
             </m.ul>
             <div className="p-4">
               <button className="btn btn-primary w-full" onClick={() => { setOpen(false); openBooking(); }}>
-                Đặt lịch chẩn đoán miễn phí
+                Đặt lịch gặp mặt định hướng
               </button>
             </div>
           </m.nav>

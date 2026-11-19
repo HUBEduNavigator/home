@@ -179,7 +179,7 @@ function Result({ grade, answers, audience, onBook, onRestart }: {
         ? <m.p variants={rise} className="mt-3">{neutralResult.why[audience]}</m.p>
         : top.map((c) => <m.p variants={rise} key={c} className="mt-3">{results[c].why[audience]}</m.p>)}
       <m.p variants={rise} className="mt-4 text-sm text-muted">
-        Đây là gợi ý từ vài câu hỏi, không phải chẩn đoán. Buổi chẩn đoán trực tiếp mới cho bức tranh đầy đủ.
+        Đây là gợi ý từ vài câu hỏi, không phải chẩn đoán. Gặp mặt trực tiếp mới cho bức tranh đầy đủ.
       </m.p>
 
       <m.h4 variants={rise} className="mt-8 font-display text-xl font-semibold">3 việc làm được ngay trong tuần này, tại nhà, miễn phí</m.h4>
@@ -200,8 +200,11 @@ function Result({ grade, answers, audience, onBook, onRestart }: {
         ))}
       </ol>
 
-      <m.div variants={rise} className="mt-8 flex flex-col gap-3 sm:flex-row">
-        <button className="btn btn-primary" onClick={onBook}><CalendarCheck size={18} aria-hidden /> Đặt lịch chẩn đoán miễn phí</button>
+      <m.p variants={rise} className="mt-8 rounded-2xl border border-line bg-surface p-5">
+        <strong>Muốn đi sâu hơn?</strong> Chỉ cần 1–2 buổi gặp mặt: HUB lắng nghe, chỉ rõ điểm nghẽn của {audience === "parent" ? "con" : "bạn"}, trao cách tự học phù hợp, rồi hướng dẫn chọn đúng bộ tài liệu trên web tài liệu của HUB EduNavigator.
+      </m.p>
+      <m.div variants={rise} className="mt-4 flex flex-col gap-3 sm:flex-row">
+        <button className="btn btn-primary" onClick={onBook}><CalendarCheck size={18} aria-hidden /> Đặt lịch gặp mặt định hướng</button>
         <a className="btn btn-ghost" href={site.docsUrl} target="_blank" rel="noopener noreferrer"><BookOpen size={18} aria-hidden /> {r.docsLabel}</a>
       </m.div>
       <m.div variants={rise}>

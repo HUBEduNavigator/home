@@ -11,7 +11,7 @@ export function Process() {
   return (
     <section id="quy-trinh" className="section">
       <div className="container-x">
-        <SectionHead eyebrow="Quy trình làm việc" title="Bốn chặng, mỗi chặng có sản phẩm cụ thể" />
+        <SectionHead eyebrow="Cách làm việc" title="Gọn trong 1–2 buổi gặp mặt, rồi bạn tự đi tiếp với tài liệu đúng" lead="HUB không kéo dài theo tháng hay theo học kỳ. Dịch vụ đi thẳng vào gốc của cách tự học, rồi trao cho học sinh đúng công cụ để tự học tiếp." />
         <ol ref={ref} className="relative mt-10 space-y-8 pl-12 md:pl-16">
           <span aria-hidden className="absolute bottom-2 left-4 top-2 w-1 rounded bg-line md:left-6" />
           <m.span aria-hidden className="absolute bottom-2 left-4 top-2 w-1 origin-top rounded bg-accent md:left-6" style={{ scaleY: grow }} />
@@ -34,12 +34,9 @@ export function Process() {
               </m.span>
               <h3 className="text-xl font-semibold">{s.name}</h3>
               <dl className="mt-3 grid gap-x-6 gap-y-2 md:grid-cols-[9rem_1fr] md:gap-y-3">
-                <dt className="font-semibold text-muted">Nội dung</dt><dd className="mb-2 md:mb-0">{s.what}</dd>
-                <dt className="font-semibold text-muted">Ai tham gia</dt><dd className="mb-2 md:mb-0">{s.who}</dd>
-                <dt className="font-semibold text-muted">Sản phẩm</dt>
-                <dd className="mb-2 md:mb-0"><span className="rounded-md bg-accent/20 px-1.5 py-0.5 font-medium">{s.product}</span></dd>
-                <dt className="font-semibold text-muted">Thời lượng</dt>
-                <dd>{s.duration ?? "Thống nhất khi tư vấn"}</dd>
+                <dt className="font-semibold text-muted">Nội dung chính</dt><dd className="mb-2 md:mb-0">{s.what}</dd>
+                <dt className="font-semibold text-muted">Học sinh nhận được</dt>
+                <dd><span className="rounded-md bg-accent/20 px-1.5 py-0.5 font-medium">{s.product}</span></dd>
               </dl>
             </m.li>
           ))}

@@ -1,4 +1,3 @@
-import { AiDemo } from "@/components/AiDemo";
 import { AppProvider } from "@/components/AppContext";
 import { BookingModalLazy } from "@/components/BookingModalLazy";
 import { Compare } from "@/components/Compare";
@@ -28,9 +27,8 @@ export default function Page() {
         <Diagnostic />
         <Compare />
         <Process />
-        <AiDemo />
-        <Founder />
         <Resources />
+        <Founder />
         <Plans />
         <Testimonials />
         <Faq />

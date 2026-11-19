@@ -1,14 +1,22 @@
-/** `price: null` = TODO, UI hiện "Liên hệ để được tư vấn". */
+/** `price: null` → giao diện hiện "Liên hệ để được tư vấn". */
+export const plansIntro = {
+  eyebrow: "Dành cho ai",
+  title: "Định hướng theo ba nhóm cấp học",
+  lead: "Mỗi nhóm đều làm theo cùng một cách gọn: 1–2 buổi gặp mặt định hướng, rồi hướng dẫn khai thác đúng bộ tài liệu trên web tài liệu của HUB EduNavigator.",
+  note: "Dịch vụ gói gọn trong 1–2 buổi gặp mặt định hướng và chỉ dẫn khai thác kho tài liệu phù hợp. Lịch gặp và chi phí sẽ được trao đổi rõ qua Zalo trước khi bắt đầu.",
+};
+
 export const plans = [
   {
     id: "g5",
     name: "Lớp 5",
-    tag: "Chuẩn bị lên THCS · Cấp tiểu học chỉ nhận lớp 5",
+    tag: "Chuẩn bị lên THCS · cấp tiểu học chỉ nhận lớp 5",
     focus: [
-      "Hình thành thói quen tự học: ghi chép, quản lý thời gian, tự lập kế hoạch bài vở trước khi lên THCS",
-      "Tập nhận ra mình chưa hiểu chỗ nào và chủ động đặt câu hỏi",
-      "Bước đầu làm quen với cách dùng AI an toàn, có hướng dẫn",
+      "Gợi mở nhận thức và tư duy tự học sớm trước khi lên THCS",
+      "Hướng dẫn thói quen ghi chép, sắp xếp thời gian và cách đặt câu hỏi khi chưa hiểu bài",
+      "Chỉ cách làm quen với bộ tài liệu nền tảng tiền THCS phù hợp lứa tuổi",
     ],
+    cta: "Đặt lịch định hướng cho lớp 5",
     price: null as string | null,
   },
   {
@@ -16,10 +24,11 @@ export const plans = [
     name: "THCS",
     tag: "Lớp 6–9",
     focus: [
-      "Khoanh vùng và lấp chỗ hổng kiến thức gốc, dựng cách tự học riêng cho từng môn",
-      "Giảm áp lực so sánh với bạn bè, lấy lại sự tự tin với việc học",
-      "Lớp 9: lập chiến lược ôn thi vào lớp 10",
+      "Tìm chỗ hổng kiến thức gốc, gỡ áp lực so sánh với bạn bè, sửa cách học kém hiệu quả",
+      "Định hướng cách tự học nắm bản chất, tránh thói quen dùng AI để chép bài",
+      "Chỉ cách khai thác tài liệu nền tảng, nâng cao và dạng đề chung để ôn thi vào lớp 10",
     ],
+    cta: "Đặt lịch định hướng cho THCS",
     price: null as string | null,
   },
   {
@@ -27,10 +36,11 @@ export const plans = [
     name: "THPT",
     tag: "Lớp 10–12",
     focus: [
-      "Tự lập và quản lý kế hoạch học theo tổ hợp môn đã chọn",
-      "Dùng AI để tự nghiên cứu, phân tích dạng bài khó và tự kiểm tra, không để chép bài",
-      "Lớp 12: lập chiến lược ôn thi tốt nghiệp THPT",
+      "Tối ưu cách tự học độc lập và cách chia thời gian theo mục tiêu riêng",
+      "Hướng dẫn tự nghiên cứu và dùng AI đúng chỗ cho phần kiến thức chuyên sâu",
+      "Chỉ cách khai thác bộ dạng bài chung (Dễ, Trung bình, Khó, Nâng cao) cho kỳ thi tốt nghiệp THPT",
     ],
+    cta: "Đặt lịch định hướng cho THPT",
     price: null as string | null,
   },
 ];

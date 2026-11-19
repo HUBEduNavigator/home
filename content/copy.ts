@@ -3,16 +3,16 @@ import type { Dual } from "./types";
 export const hero = {
   eyebrow: { parent: "Dành cho ba mẹ", student: "Dành cho bạn" } as Dual,
   title: {
-    parent: "Con học nhiều mà kết quả vẫn đứng yên? Hãy bắt đầu bằng việc tìm đúng gốc của vấn đề.",
-    student: "Học nhiều mà vẫn mông lung? Cùng tìm đúng chỗ đang nghẽn.",
+    parent: "Con học nhiều nhưng chưa tiến bộ? Hãy bắt đầu từ 1–2 buổi định hướng lại cách tự học.",
+    student: "Học nhiều mà vẫn mất phương hướng? Chỉ cần 1–2 buổi để xác định lại cách tự học.",
   } as Dual,
   sub: {
     parent:
-      "EduNavigator không giảng lại bài trên lớp và không luyện đề máy móc. HUB lắng nghe con, chẩn đoán chỗ hổng kiến thức và cách học chưa phù hợp, dựng chiến lược tự học riêng cho con, rồi đồng hành cho tới khi con tự học được, kể cả khi dùng AI.",
+      "EduNavigator không phải gia sư dạy kèm dài hạn và không giảng lại kiến thức từng môn. Trong 1–2 buổi gặp mặt, HUB lắng nghe, chỉ rõ điểm nghẽn của con, trao tư duy và cách tự học hiệu quả, rồi hướng dẫn con chọn đúng bộ tài liệu phù hợp trên web tài liệu do HUB phân tích và tổng hợp.",
     student:
-      "Ở đây không ai nhồi thêm kiến thức hay giải bài hộ bạn. HUB lắng nghe khó khăn thật của bạn, cùng bạn khoanh vùng phần nền đang hổng, dựng cách tự học hợp với bạn và hướng dẫn dùng AI đúng cách để hiểu bài thay vì chép bài.",
+      "EduNavigator không dạy kèm dài kỳ và không giải bài hộ bạn. Trong 1–2 buổi gặp mặt, HUB lắng nghe khó khăn thật của bạn, định hướng lại tư duy và cách tự học, rồi chỉ bạn cách chọn đúng bộ tài liệu dạng bài trên web tài liệu để tự bứt phá.",
   } as Dual,
-  ctaBook: "Đặt lịch chẩn đoán miễn phí",
+  ctaBook: "Đặt lịch gặp mặt định hướng",
   ctaTest: "Tự kiểm tra trong 3 phút",
 };
 

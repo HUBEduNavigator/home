@@ -14,8 +14,8 @@ export function Situations() {
       <div className="container-x">
         <SectionHead
           eyebrow="Khi nào bạn cần chúng tôi"
-          title="Năm tình huống thường gặp nhất"
-          lead={`Nếu một trong các đoạn dưới đây giống ${audience === "parent" ? "con của ba mẹ" : "bạn"}, rất có thể EduNavigator giúp được.`}
+          title="Năm tình huống cần định hướng lại cách tự học"
+          lead={audience === "parent" ? "Nếu con đang rơi vào một trong các tình huống dưới đây, đi học thêm nhiều hơn thường chưa chạm tới gốc. 1–2 buổi định hướng lại tư duy và cách tự học sẽ đúng chỗ hơn." : "Nếu bạn thấy mình trong các tình huống dưới đây, vấn đề thường nằm ở cách học và nguồn tài liệu, không phải vì bạn không đủ khả năng."}
         />
         <Stagger className="mt-9 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
           {cases.map((c) => {
@@ -32,14 +32,14 @@ export function Situations() {
                   </m.p>
                 </AnimatePresence>
                 <p className="mt-4 border-t border-line pt-4 text-muted">
-                  <strong className="text-ink">HUB làm gì: </strong>
+                  <strong className="text-ink">Tại buổi gặp mặt: </strong>
                   {c.handling[audience]}
                 </p>
                 <button
                   className="mt-auto inline-flex min-h-11 items-center gap-1.5 self-start pt-4 font-semibold text-accenttext underline-offset-4 hover:underline"
                   onClick={() => openBooking({ role: audience, cases: [c.id] })}
                 >
-                  Đặt lịch cho tình huống này <ArrowRight size={16} aria-hidden className="transition-transform group-hover:translate-x-1" />
+                  Đặt lịch gặp mặt cho tình huống này <ArrowRight size={16} aria-hidden className="transition-transform group-hover:translate-x-1" />
                 </button>
               </StaggerItem>
             );

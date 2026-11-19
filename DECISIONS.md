@@ -64,3 +64,11 @@ Câu 0 (mọi người): chọn lớp 5 / THCS / THPT. Thang trả lời mặc �
 - **Bộ 6 câu hỏi chẩn đoán mới**: thiếu so với yêu cầu 8–10 câu, làm hỏng bộ chấm điểm; giữ bộ 9–10 câu hiện tại.
 - **Lời nhãn thương mại/thuật ngữ**: "Ma trận dạng bài tối ưu bởi AI", "khai phóng", "Socratic Prompting", "Feynman", "Peer Pressure" (brief cấm sáo rỗng và dịch nguyên cụm tiếng Anh), "kết quả tất yếu", "tối ưu hóa điểm số" (không hứa kết quả).
 - **Tên hai nút ở hero** giữ như brief: "Đặt lịch chẩn đoán miễn phí", "Tự kiểm tra trong 3 phút".
+
+## Đổi mô hình dịch vụ (theo yêu cầu của HUB)
+- **Dịch vụ = 1–2 buổi gặp mặt định hướng + hướng dẫn khai thác web tài liệu.** Không còn kế hoạch 4 tuần, họp/báo cáo hằng tuần, "lùi dần". Quy trình rút từ 4 chặng còn 3 bước.
+- **Đã xoá mục "Học cùng AI"** (`AiDemo`, `ai-demo.ts`, mục `#hoc-cung-ai`). Ý về AI chỉ còn ở Kho tài liệu, So sánh và Hỏi đáp: nhiều học sinh dùng AI sai cách (chép đáp án), đó là lý do có kho tài liệu theo dạng bài.
+- **Người đồng hành** tách thành hai hồ sơ: Bảo Huy (HUB) và Bùi Trần Thạnh. Ảnh thay bằng chữ viết tắt.
+- **Bỏ chữ "miễn phí" khỏi nút đặt lịch** vì bản mới không nói buổi gặp miễn phí; chi phí trao đổi qua Zalo. "3 việc làm tại nhà" ở công cụ tự kiểm tra vẫn miễn phí.
+- **Không áp dụng**: bộ 6 câu chẩn đoán cũ (giữ bộ 9–10 câu), lời "tâm thư" (không còn khung này), "Tuyên bố bảo mật lưu trên thiết bị" (web không lưu gì).
+- **Chữ "chặng" trên hình la bàn** đổi thành: Mất phương hướng, Chẩn đoán, Định hướng, Tài liệu đúng, Tự chủ.

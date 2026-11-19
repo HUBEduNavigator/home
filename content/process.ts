@@ -1,35 +1,21 @@
-/** `duration: null` = TODO, HUB chốt thời lượng. UI hiện "Thống nhất khi tư vấn". */
+/** Dịch vụ gọn trong 1–2 buổi gặp mặt, sau đó học sinh tự học với bộ tài liệu phù hợp. */
 export const steps = [
   {
-    id: "diagnose",
-    name: "Chẩn đoán",
-    what: "Trao đổi với con và ba mẹ, xem vở ghi và bài kiểm tra gần đây, làm vài bài nhỏ để xác định đúng chỗ con đang nghẽn: kiến thức nền, cách học hay tâm lý.",
-    who: "HUB làm việc trực tiếp với con. Ba mẹ tham gia phần đầu để chia sẻ bối cảnh.",
-    product: "Bản chẩn đoán 1 trang: nghẽn ở đâu, vì sao, và nên xử lý theo thứ tự nào.",
-    duration: null as string | null,
+    id: "listen",
+    name: "Gặp mặt, lắng nghe và chẩn đoán",
+    what: "Trao đổi trực tiếp với học sinh (và ba mẹ ở phần đầu), xem nhanh tình hình học hiện tại để chỉ đúng nguyên nhân khiến việc học kém hiệu quả: mất kiến thức gốc, áp lực đồng lứa, sai cách học hay đang lạm dụng AI để chép bài.",
+    product: "Biết rõ điểm nghẽn thật sự và thứ tự cần xử lý.",
   },
   {
-    id: "plan",
-    name: "Lộ trình cá nhân",
-    what: "Từ bản chẩn đoán, chọn ra vài việc quan trọng nhất và xếp vào lịch thực tế của con, cân đối giữa giờ học ở trường và thời gian tự học ở nhà.",
-    who: "HUB soạn bản đầu, con cùng chỉnh lại để chắc chắn làm được.",
-    product: "Kế hoạch tự học 4 tuần, có việc cụ thể từng ngày và cách tự kiểm tra.",
-    duration: null as string | null,
+    id: "direction",
+    name: "Định hướng tư duy và cách tự học (1–2 buổi)",
+    what: "Trao tư duy tự học đúng đắn theo tinh thần “tự học mà không học thuật”: cách tự phân tích đề, cách ôn để nắm bản chất, cách dùng AI để hỏi lại thay vì chép đáp án.",
+    product: "Cách tự học rõ ràng, áp dụng được ngay vào lịch học hằng ngày.",
   },
   {
-    id: "companion",
-    name: "Đồng hành",
-    what: "Con học theo kế hoạch. Mỗi tuần HUB xem con đã làm được gì, chỗ nào còn vướng, rồi chỉnh kế hoạch, đồng thời hướng dẫn con dùng AI để hỏi lại thay vì chép đáp án.",
-    who: "Con học và thực hành. HUB hỏi, gợi ý và chỉnh. Ba mẹ nhận cập nhật ngắn.",
-    product: "Nhật ký học tập của con và bản kế hoạch cập nhật sau mỗi tuần.",
-    duration: null as string | null,
-  },
-  {
-    id: "independent",
-    name: "Tự chủ",
-    what: "HUB giảm dần mức can thiệp. Con tự lập kế hoạch tuần, tự kiểm tra, tự quyết khi nào cần hỏi AI hoặc hỏi thầy cô. HUB chỉ xem lại ở các mốc quan trọng.",
-    who: "Con làm chủ quy trình. HUB xem lại và gỡ vướng khi cần.",
-    product: "Cách học riêng của con, tự dùng được cho nhiều môn và các kỳ sau.",
-    duration: null as string | null,
+    id: "resources",
+    name: "Chỉ dẫn chọn và khai thác kho tài liệu phù hợp",
+    what: "Sau khi thống nhất cách học, HUB trực tiếp hướng dẫn học sinh vào web tài liệu của HUB EduNavigator để tìm đúng bộ tài liệu theo lớp, môn và mức độ hiện tại.",
+    product: "Học sinh tự ôn tại nhà với tài liệu nền tảng, nâng cao và dạng đề chung đã được phân tích sẵn.",
   },
 ];

@@ -37,8 +37,8 @@ export function Hero() {
           </AnimatePresence>
           <m.p {...enter(2)} className="mt-4 font-display text-lg text-accenttext">{site.slogan}</m.p>
           <m.div {...enter(3)} className="mt-7 flex flex-col gap-3 sm:flex-row">
-            <button className="btn btn-primary" onClick={() => openBooking()}><CalendarCheck size={18} aria-hidden /> {hero.ctaBook}</button>
-            <a className="btn btn-ghost group" href="#tu-kiem-tra">{hero.ctaTest} <ArrowRight size={18} aria-hidden className="transition-transform group-hover:translate-x-1" /></a>
+            <a className="btn btn-primary group" href="#tu-kiem-tra">{hero.ctaTest} <ArrowRight size={18} aria-hidden className="transition-transform group-hover:translate-x-1" /></a>
+            <button className="btn btn-ghost" onClick={() => openBooking()}><CalendarCheck size={18} aria-hidden /> {hero.ctaBook}</button>
           </m.div>
         </div>
         <m.div initial={{ opacity: 0, scale: 0.97 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8, ease: EASE, delay: 0.15 }}>

@@ -18,7 +18,7 @@ export const results: Record<CaseId, CaseResult> = {
         "Các câu trả lời cho thấy bạn đang so mình với bạn bè nhiều và thấy căng khi nghĩ tới việc học. Đó là phản ứng rất bình thường, và có cách làm nhẹ đi.",
     },
     
-    docsLabel: "Tài liệu về quản lý áp lực và đặt mục tiêu nhỏ",
+    docsLabel: "Mở web tài liệu: chọn bộ tài liệu vừa sức",
     actions: [
       {
         title: "Viết ra “thước đo của riêng mình”",
@@ -78,7 +78,7 @@ export const results: Record<CaseId, CaseResult> = {
         "Các câu trả lời cho thấy bạn vướng ở bài mới chủ yếu vì phần kiến thức bên dưới chưa chắc. Học thêm bài mới lúc này không giúp, lùi lại đúng chỗ mới giúp.",
     },
     
-    docsLabel: "Tài liệu ôn lại kiến thức nền theo môn và lớp",
+    docsLabel: "Mở web tài liệu: tài liệu nền tảng theo lớp và môn",
     actions: [
       {
         title: "Lập “nhật ký lỗi sai” của tuần",
@@ -138,7 +138,7 @@ export const results: Record<CaseId, CaseResult> = {
         "Các câu trả lời cho thấy bạn đã bỏ nhiều thời gian nhưng cách học chưa giúp nhớ lâu. Thường vấn đề không phải số giờ học, mà là ít khi tự kiểm tra và tự giải thích lại.",
     },
     
-    docsLabel: "Tài liệu về phương pháp tự học và tự kiểm tra",
+    docsLabel: "Mở web tài liệu: tài liệu theo dạng bài",
     actions: [
       {
         title: "Gấp sách và nhớ lại",
@@ -198,7 +198,7 @@ export const results: Record<CaseId, CaseResult> = {
         "Các câu trả lời cho thấy bạn cần bắt đầu lại từ nền tảng nhưng chưa có ai ngồi cùng để làm việc đó. Đó không phải lỗi của bạn, vì phần lớn lớp học được thiết kế để đi tiếp chương trình.",
     },
     
-    docsLabel: "Tài liệu học lại từ nền tảng",
+    docsLabel: "Mở web tài liệu: tài liệu nền tảng",
     actions: [
       {
         title: "Chọn một môn và xác định điểm xuất phát",
@@ -217,7 +217,7 @@ export const results: Record<CaseId, CaseResult> = {
         },
       },
       {
-        title: "Xếp lộ trình học lại 2 tuần",
+        title: "Tự xếp lịch ôn lại trong 2 tuần",
         time: "15 phút, một lần",
         steps: {
           parent: [
@@ -258,7 +258,7 @@ export const results: Record<CaseId, CaseResult> = {
         "Bạn đang học lớp 5, nên điều đáng chuẩn bị nhất lúc này không phải bài lớp 6 mà là thói quen tự học và sự tự tin khi vào môi trường mới.",
     },
     
-    docsLabel: "Tài liệu chuẩn bị lên THCS",
+    docsLabel: "Mở web tài liệu: tài liệu nền tảng tiền THCS",
     actions: [
       {
         title: "Tự làm “lịch một ngày” cho thứ Bảy",

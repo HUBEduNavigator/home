@@ -67,7 +67,7 @@ function Dialog({ prefill, onClose }: { prefill: Prefill; onClose: () => void })
   }, [onClose]);
 
   const summary = [
-    "Xin chào HUB, mình muốn đặt lịch chẩn đoán miễn phí.",
+    "Xin chào HUB, mình muốn đặt lịch gặp mặt định hướng cách tự học (1–2 buổi).",
     `- Người đặt: ${s.role === "parent" ? "Phụ huynh" : "Học sinh"}`,
     `- Lớp: ${GRADES[s.grade] ?? ""}`,
     `- Vấn đề chính: ${s.cases.map((c) => caseById[c].title).join("; ") || "Chưa rõ, mong được tư vấn"}`,
@@ -134,7 +134,7 @@ function Dialog({ prefill, onClose }: { prefill: Prefill; onClose: () => void })
         <div aria-hidden className="mx-auto -mt-2 mb-3 h-1.5 w-10 rounded-full bg-line sm:hidden" />
         <div className="flex items-start justify-between gap-3">
           <div className="min-w-0">
-            <h2 id="bk-title" className="text-balance text-2xl font-semibold">Đặt lịch chẩn đoán miễn phí</h2>
+            <h2 id="bk-title" className="text-balance text-2xl font-semibold">Đặt lịch 1–2 buổi gặp mặt định hướng</h2>
             <p className="text-sm text-muted" aria-live="polite">Bước {step + 1}/{LABELS.length}: {LABELS[step]}</p>
           </div>
           <button aria-label="Đóng" onClick={onClose} className="grid size-11 shrink-0 place-items-center rounded-full border border-line transition-colors hover:bg-surface2"><X aria-hidden /></button>
@@ -209,7 +209,7 @@ function Dialog({ prefill, onClose }: { prefill: Prefill; onClose: () => void })
               {step === 5 && (
                 <label className={`flex cursor-pointer items-start gap-3 rounded-2xl border-2 p-4 transition-colors ${s.consent ? "border-accent bg-accent/10" : "border-line"}`}>
                   <input data-autofocus type="checkbox" checked={s.consent} onChange={(e) => setS({ ...s, consent: e.target.checked })} className="mt-1 size-6 shrink-0 accent-[var(--accent)]" />
-                  <span>Tôi đồng ý để HUB liên hệ lại qua số điện thoại/Zalo ở trên để trao đổi về buổi chẩn đoán. Web này không lưu thông tin, thông tin chỉ được gửi khi tôi tự bấm gửi.</span>
+                  <span>Tôi đồng ý để HUB liên hệ lại qua số điện thoại/Zalo ở trên để trao đổi về buổi gặp mặt định hướng. Web này không lưu thông tin, thông tin chỉ được gửi khi tôi tự bấm gửi.</span>
                 </label>)}
               {step === LAST && (
                 <div>
